@@ -1,0 +1,308 @@
+[
+  {
+    "id": "english_language",
+    "name": "English Language",
+    "subject_code": "ENG",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original English Language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "mathematics",
+    "name": "Mathematics",
+    "subject_code": "MTH",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Mathematics practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "biology",
+    "name": "Biology",
+    "subject_code": "BIO",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Biology practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "chemistry",
+    "name": "Chemistry",
+    "subject_code": "CHE",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Chemistry practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "physics",
+    "name": "Physics",
+    "subject_code": "PHY",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Physics practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "agricultural_science",
+    "name": "Agricultural Science",
+    "subject_code": "AGR",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Agricultural Science practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "economics",
+    "name": "Economics",
+    "subject_code": "ECO",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Economics practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "government",
+    "name": "Government",
+    "subject_code": "GOV",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Government practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "literature_in_english",
+    "name": "Literature in English",
+    "subject_code": "LIT",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Literature in English practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "geography",
+    "name": "Geography",
+    "subject_code": "GEO",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Geography practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "accounting",
+    "name": "Accounting",
+    "subject_code": "ACC",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Accounting practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "commerce",
+    "name": "Commerce",
+    "subject_code": "COM",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Commerce practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "christian_religious_studies",
+    "name": "Christian Religious Studies (CRS)",
+    "subject_code": "CRS",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Christian Religious Studies practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "islamic_religious_studies",
+    "name": "Islamic Religious Studies (IRS)",
+    "subject_code": "IRS",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Islamic Religious Studies practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "history",
+    "name": "History",
+    "subject_code": "HIS",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original History practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "hausa",
+    "name": "Hausa",
+    "subject_code": "HAU",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Original Hausa language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "yungur",
+    "name": "Yungur",
+    "subject_code": "YUN",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Question bank awaiting the official Yungur language source document.",
+    "is_active": true
+  },
+  {
+    "id": "yoruba",
+    "name": "Yoruba",
+    "subject_code": "YOR",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Original Yoruba language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "arabic",
+    "name": "Arabic",
+    "subject_code": "ARA",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Original Arabic language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "french",
+    "name": "French",
+    "subject_code": "FRE",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Original French language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "fine_arts",
+    "name": "Fine Arts",
+    "subject_code": "ART",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Fine Arts practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "music",
+    "name": "Music",
+    "subject_code": "MUS",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Music practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "computer_studies",
+    "name": "Computer Studies",
+    "subject_code": "CST",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Computer Studies practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "home_economics",
+    "name": "Home Economics",
+    "subject_code": "HEC",
+    "category": "Vocational",
+    "education_level": "SSS",
+    "description": "Original Home Economics practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "agricultural_economics",
+    "name": "Agricultural Economics",
+    "subject_code": "AEC",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Agricultural Economics practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "technical_drawing",
+    "name": "Technical Drawing",
+    "subject_code": "TDG",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Technical Drawing practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "civic_education",
+    "name": "Civic Education",
+    "subject_code": "CIV",
+    "category": "Arts",
+    "education_level": "SSS",
+    "description": "Original Civic Education practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "physical_and_health_education",
+    "name": "Physical and Health Education (PHE)",
+    "subject_code": "PHE",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Physical and Health Education practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "insurance",
+    "name": "Insurance",
+    "subject_code": "INS",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Insurance practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "office_practice",
+    "name": "Office Practice",
+    "subject_code": "OFF",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Office Practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing",
+    "subject_code": "MKT",
+    "category": "Commercial",
+    "education_level": "SSS",
+    "description": "Original Marketing practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "food_and_nutrition",
+    "name": "Food and Nutrition",
+    "subject_code": "FNT",
+    "category": "Vocational",
+    "education_level": "SSS",
+    "description": "Original Food and Nutrition practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "animal_husbandry",
+    "name": "Animal Husbandry",
+    "subject_code": "ANH",
+    "category": "Science",
+    "education_level": "SSS",
+    "description": "Original Animal Husbandry practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  },
+  {
+    "id": "igbo",
+    "name": "Igbo",
+    "subject_code": "IGB",
+    "category": "Languages",
+    "education_level": "SSS",
+    "description": "Original Igbo language practice questions for Nigerian secondary-school learners.",
+    "is_active": true
+  }
+]

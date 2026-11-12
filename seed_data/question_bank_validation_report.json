@@ -1,0 +1,72 @@
+{
+  "subjects": {
+    "english_language": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "mathematics": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "biology": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "chemistry": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "physics": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "agricultural_science": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "economics": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "government": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "literature_in_english": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    },
+    "geography": {
+      "accepted": 100,
+      "rejected": 0,
+      "required": 100,
+      "packaged": 100
+    }
+  },
+  "accepted": 1000,
+  "rejected": 0,
+  "duplicate_ids": 0,
+  "duplicate_normalized_question_text": 0,
+  "editorial_review_required": 1000,
+  "editorially_reviewed": 0,
+  "validation_errors": [],
+  "total_packaged": 1000
+}

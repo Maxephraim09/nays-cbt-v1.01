@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "546532456793",
+    "project_id": "nays-cbt",
+    "storage_bucket": "nays-cbt.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546532456793:android:758dccd3415d0b48da3448",
+        "android_client_info": {
+          "package_name": "com.nays.nays_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546532456793-jnc2pa6iu10atffffhghcgl8l123mpao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAkeuwn-S7sO2ACLa69D2aHOlGSod16Zw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546532456793-jnc2pa6iu10atffffhghcgl8l123mpao.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "546532456793-hagmo84373o4tk5o1qfr6mqf4tfglkb8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nays.naysMobile"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

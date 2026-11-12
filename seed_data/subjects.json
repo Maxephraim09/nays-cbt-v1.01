@@ -1,0 +1,642 @@
+[
+  {
+    "subjectId": "mathematics-primary",
+    "subjectCode": "PR-mathe",
+    "subjectName": "Mathematics",
+    "description": "Mathematics study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "english-language-primary",
+    "subjectCode": "PR-engli",
+    "subjectName": "English Language",
+    "description": "English Language study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "basic-science-primary",
+    "subjectCode": "PR-basic",
+    "subjectName": "Basic Science",
+    "description": "Basic Science study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "basic-technology-primary",
+    "subjectCode": "PR-basic",
+    "subjectName": "Basic Technology",
+    "description": "Basic Technology study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "social-studies-primary",
+    "subjectCode": "PR-socia",
+    "subjectName": "Social Studies",
+    "description": "Social Studies study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "civic-education-primary",
+    "subjectCode": "PR-civic",
+    "subjectName": "Civic Education",
+    "description": "Civic Education study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "computer-studies---ict-primary",
+    "subjectCode": "PR-compu",
+    "subjectName": "Computer Studies / ICT",
+    "description": "Computer Studies / ICT study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "agricultural-science-primary",
+    "subjectCode": "PR-agric",
+    "subjectName": "Agricultural Science",
+    "description": "Agricultural Science study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "home-economics-primary",
+    "subjectCode": "PR-home-",
+    "subjectName": "Home Economics",
+    "description": "Home Economics study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "physical-and-health-education-primary",
+    "subjectCode": "PR-physi",
+    "subjectName": "Physical and Health Education",
+    "description": "Physical and Health Education study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "christian-religious-studies-primary",
+    "subjectCode": "PR-chris",
+    "subjectName": "Christian Religious Studies",
+    "description": "Christian Religious Studies study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "islamic-religious-studies-primary",
+    "subjectCode": "PR-islam",
+    "subjectName": "Islamic Religious Studies",
+    "description": "Islamic Religious Studies study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "security-education-primary",
+    "subjectCode": "PR-secur",
+    "subjectName": "Security Education",
+    "description": "Security Education study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "cultural-and-creative-arts-primary",
+    "subjectCode": "PR-cultu",
+    "subjectName": "Cultural and Creative Arts",
+    "description": "Cultural and Creative Arts study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "nigerian-history-primary",
+    "subjectCode": "PR-niger",
+    "subjectName": "Nigerian History",
+    "description": "Nigerian History study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "french-language-primary",
+    "subjectCode": "PR-frenc",
+    "subjectName": "French Language",
+    "description": "French Language study content for Primary learners.",
+    "category": "Primary",
+    "educationLevel": "Primary",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "mathematics-jss",
+    "subjectCode": "JS-mathe",
+    "subjectName": "Mathematics",
+    "description": "Mathematics study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "english-studies-jss",
+    "subjectCode": "JS-engli",
+    "subjectName": "English Studies",
+    "description": "English Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "basic-science-jss",
+    "subjectCode": "JS-basic",
+    "subjectName": "Basic Science",
+    "description": "Basic Science study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "basic-technology-jss",
+    "subjectCode": "JS-basic",
+    "subjectName": "Basic Technology",
+    "description": "Basic Technology study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "business-studies-jss",
+    "subjectCode": "JS-busin",
+    "subjectName": "Business Studies",
+    "description": "Business Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "computer-studies-jss",
+    "subjectCode": "JS-compu",
+    "subjectName": "Computer Studies",
+    "description": "Computer Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "civic-education-jss",
+    "subjectCode": "JS-civic",
+    "subjectName": "Civic Education",
+    "description": "Civic Education study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "social-studies-jss",
+    "subjectCode": "JS-socia",
+    "subjectName": "Social Studies",
+    "description": "Social Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "agricultural-science-jss",
+    "subjectCode": "JS-agric",
+    "subjectName": "Agricultural Science",
+    "description": "Agricultural Science study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "home-economics-jss",
+    "subjectCode": "JS-home-",
+    "subjectName": "Home Economics",
+    "description": "Home Economics study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "physical-and-health-education-jss",
+    "subjectCode": "JS-physi",
+    "subjectName": "Physical and Health Education",
+    "description": "Physical and Health Education study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "basic-financial-education-jss",
+    "subjectCode": "JS-basic",
+    "subjectName": "Basic Financial Education",
+    "description": "Basic Financial Education study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "christian-religious-studies-jss",
+    "subjectCode": "JS-chris",
+    "subjectName": "Christian Religious Studies",
+    "description": "Christian Religious Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "islamic-studies-jss",
+    "subjectCode": "JS-islam",
+    "subjectName": "Islamic Studies",
+    "description": "Islamic Studies study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "nigerian-languages-jss",
+    "subjectCode": "JS-niger",
+    "subjectName": "Nigerian Languages",
+    "description": "Nigerian Languages study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "french-jss",
+    "subjectCode": "JS-frenc",
+    "subjectName": "French",
+    "description": "French study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "security-education-jss",
+    "subjectCode": "JS-secur",
+    "subjectName": "Security Education",
+    "description": "Security Education study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "cultural-and-creative-arts-jss",
+    "subjectCode": "JS-cultu",
+    "subjectName": "Cultural and Creative Arts",
+    "description": "Cultural and Creative Arts study content for JSS learners.",
+    "category": "JSS",
+    "educationLevel": "JSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "mathematics-sss",
+    "subjectCode": "SS-mathe",
+    "subjectName": "Mathematics",
+    "description": "Mathematics study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 51
+  },
+  {
+    "subjectId": "english-language-sss",
+    "subjectCode": "SS-engli",
+    "subjectName": "English Language",
+    "description": "English Language study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 56
+  },
+  {
+    "subjectId": "biology-sss",
+    "subjectCode": "SS-biolo",
+    "subjectName": "Biology",
+    "description": "Biology study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "chemistry-sss",
+    "subjectCode": "SS-chemi",
+    "subjectName": "Chemistry",
+    "description": "Chemistry study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "physics-sss",
+    "subjectCode": "SS-physi",
+    "subjectName": "Physics",
+    "description": "Physics study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "further-mathematics-sss",
+    "subjectCode": "SS-furth",
+    "subjectName": "Further Mathematics",
+    "description": "Further Mathematics study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "agricultural-science-sss",
+    "subjectCode": "SS-agric",
+    "subjectName": "Agricultural Science",
+    "description": "Agricultural Science study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "economics-sss",
+    "subjectCode": "SS-econo",
+    "subjectName": "Economics",
+    "description": "Economics study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "government-sss",
+    "subjectCode": "SS-gover",
+    "subjectName": "Government",
+    "description": "Government study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "commerce-sss",
+    "subjectCode": "SS-comme",
+    "subjectName": "Commerce",
+    "description": "Commerce study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "accounting-sss",
+    "subjectCode": "SS-accou",
+    "subjectName": "Accounting",
+    "description": "Accounting study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "geography-sss",
+    "subjectCode": "SS-geogr",
+    "subjectName": "Geography",
+    "description": "Geography study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "literature-in-english-sss",
+    "subjectCode": "SS-liter",
+    "subjectName": "Literature in English",
+    "description": "Literature in English study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 50
+  },
+  {
+    "subjectId": "civic-education-sss",
+    "subjectCode": "SS-civic",
+    "subjectName": "Civic Education",
+    "description": "Civic Education study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "computer-studies-sss",
+    "subjectCode": "SS-compu",
+    "subjectName": "Computer Studies",
+    "description": "Computer Studies study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "data-processing-sss",
+    "subjectCode": "SS-data-",
+    "subjectName": "Data Processing",
+    "description": "Data Processing study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "technical-drawing-sss",
+    "subjectCode": "SS-techn",
+    "subjectName": "Technical Drawing",
+    "description": "Technical Drawing study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "food-and-nutrition-sss",
+    "subjectCode": "SS-food-",
+    "subjectName": "Food and Nutrition",
+    "description": "Food and Nutrition study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "christian-religious-studies-sss",
+    "subjectCode": "SS-chris",
+    "subjectName": "Christian Religious Studies",
+    "description": "Christian Religious Studies study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "islamic-studies-sss",
+    "subjectCode": "SS-islam",
+    "subjectName": "Islamic Studies",
+    "description": "Islamic Studies study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "history-sss",
+    "subjectCode": "SS-histo",
+    "subjectName": "History",
+    "description": "History study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "financial-accounting-sss",
+    "subjectCode": "SS-finan",
+    "subjectName": "Financial Accounting",
+    "description": "Financial Accounting study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "insurance-sss",
+    "subjectCode": "SS-insur",
+    "subjectName": "Insurance",
+    "description": "Insurance study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "marketing-sss",
+    "subjectCode": "SS-marke",
+    "subjectName": "Marketing",
+    "description": "Marketing study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "animal-husbandry-sss",
+    "subjectCode": "SS-anima",
+    "subjectName": "Animal Husbandry",
+    "description": "Animal Husbandry study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "fisheries-sss",
+    "subjectCode": "SS-fishe",
+    "subjectName": "Fisheries",
+    "description": "Fisheries study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "yoruba-sss",
+    "subjectCode": "SS-yorub",
+    "subjectName": "Yoruba",
+    "description": "Yoruba study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "hausa-sss",
+    "subjectCode": "SS-hausa",
+    "subjectName": "Hausa",
+    "description": "Hausa study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "igbo-sss",
+    "subjectCode": "SS-igbo",
+    "subjectName": "Igbo",
+    "description": "Igbo study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  },
+  {
+    "subjectId": "french-language-sss",
+    "subjectCode": "SS-frenc",
+    "subjectName": "French Language",
+    "description": "French Language study content for SSS learners.",
+    "category": "SSS",
+    "educationLevel": "SSS",
+    "isActive": true,
+    "totalQuestions": 0
+  }
+]

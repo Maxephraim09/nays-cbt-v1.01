@@ -1,0 +1,133 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.role == 'admin';
+    }
+
+    match /users/{uid} {
+      allow create: if isSignedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly([
+          'fullName',
+          'email',
+          'phone',
+          'profileImage',
+          'role',
+          'institution',
+          'department',
+          'level',
+          'state',
+          'district',
+          'createdAt',
+          'updatedAt'
+        ])
+        && (!request.resource.data.keys().hasAny(['role'])
+          || request.resource.data.role == 'student')
+        && !request.resource.data.keys().hasAny([
+          'pin',
+          'pinHash',
+          'cbtPin'
+        ]);
+      allow read: if isSignedIn() && (request.auth.uid == uid || isAdmin());
+      allow update: if isSignedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly([
+          'fullName',
+          'email',
+          'phone',
+          'profileImage',
+          'role',
+          'institution',
+          'department',
+          'level',
+          'state',
+          'district',
+          'createdAt',
+          'updatedAt'
+        ])
+        && !request.resource.data.diff(resource.data).affectedKeys()
+          .hasAny(['role', 'pin', 'pinHash', 'cbtPin'])
+        && !request.resource.data.keys().hasAny([
+          'pin',
+          'pinHash',
+          'cbtPin'
+        ]);
+      allow delete: if isAdmin();
+    }
+
+    match /subjects/{subjectId} {
+      allow read: if false;
+      allow write: if false;
+    }
+
+    match /questions/{questionId} {
+      allow read, write: if false;
+    }
+
+    match /examinations/{examId} {
+      allow read, write: if false;
+    }
+
+    match /examination_attempts/{attemptId} {
+      allow read, write: if false;
+    }
+
+    match /results/{resultId} {
+      allow read, write: if false;
+    }
+
+    match /app_settings/{doc} {
+      allow read, write: if false;
+    }
+
+    match /users/{uid}/registeredSubjects/{subjectId} {
+      allow read, write: if false;
+    }
+
+    match /users/{uid}/cbt_settings/{document} {
+      allow read, write: if false;
+    }
+
+    match /users/{uid}/offlineResults/{attemptId} {
+      allow read, write: if false;
+    }
+
+    match /cbt_pin_credentials/{document=**} {
+      allow read, write: if false;
+    }
+
+    match /cbt_pin_rate_limits/{document=**} {
+      allow read, write: if false;
+    }
+
+    match /exam_sessions/{sessionId} {
+      allow read, write: if false;
+    }
+
+    match /leaderboards/{boardId}/entries/{uid} {
+      allow read: if isSignedIn();
+      allow write: if false;
+    }
+
+    match /leaderboard_events/{eventId} {
+      allow read, write: if false;
+    }
+
+    match /topics/{topicId} {
+      allow read, write: if false;
+    }
+
+    match /announcements/{announcementId} {
+      allow read, write: if false;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
