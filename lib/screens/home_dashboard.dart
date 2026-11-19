@@ -8,6 +8,7 @@ import '../theme/app_theme.dart';
 import '../widgets/nays_widgets.dart';
 import 'cbt_screens.dart';
 import 'info_screens.dart';
+import 'reminders_screen.dart';
 
 class HomeDashboardTab extends StatelessWidget {
   const HomeDashboardTab({
@@ -31,7 +32,7 @@ class HomeDashboardTab extends StatelessWidget {
     ('JAMB\nSimulation', 'Start examination', Icons.edit_note_rounded),
     ('Settings', 'App preferences', Icons.settings_rounded),
     ('Support', 'Get help', Icons.support_agent_rounded),
-    ('About NAYS', 'Learn more', Icons.info_rounded),
+    ('Reminders', 'Study prompts', Icons.alarm_rounded),
   ];
 
   static const _lightTileColors = [
@@ -537,7 +538,7 @@ class HomeDashboardTab extends StatelessWidget {
       case 4:
         onOpen(const SupportScreen());
       case 5:
-        onOpen(const AboutScreen());
+        onOpen(const RemindersScreen());
     }
   }
 
@@ -630,28 +631,38 @@ class _ContactChip extends StatelessWidget {
   final String label;
   final Uri uri;
   @override
-  Widget build(BuildContext context) => ActionChip(
-    visualDensity: VisualDensity.compact,
-    avatar: Icon(icon, color: Colors.white, size: 15),
-    label: Text(
-      label,
-      style: const TextStyle(
-        color: Colors.white,
-        fontSize: 11,
-        fontWeight: FontWeight.w700,
+  Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final foregroundColor = isDark ? Colors.white : AppTheme.forest;
+    final backgroundColor = isDark
+        ? Colors.white.withValues(alpha: .14)
+        : Colors.white;
+    return ActionChip(
+      visualDensity: VisualDensity.compact,
+      avatar: Icon(icon, color: foregroundColor, size: 15),
+      label: Text(
+        label,
+        style: TextStyle(
+          color: foregroundColor,
+          fontSize: 11,
+          fontWeight: FontWeight.w700,
+        ),
       ),
-    ),
-    backgroundColor: Colors.white.withValues(alpha: .14),
-    side: BorderSide.none,
-    onPressed: () async {
-      final opened = await launchUrl(uri, mode: LaunchMode.externalApplication);
-      if (!opened && context.mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Unable to open the support app on this device.'),
-          ),
+      backgroundColor: backgroundColor,
+      side: BorderSide.none,
+      onPressed: () async {
+        final opened = await launchUrl(
+          uri,
+          mode: LaunchMode.externalApplication,
         );
-      }
-    },
-  );
+        if (!opened && context.mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Unable to open the support app on this device.'),
+            ),
+          );
+        }
+      },
+    );
+  }
 }

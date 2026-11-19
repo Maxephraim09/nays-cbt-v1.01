@@ -13,7 +13,7 @@ class NaysCbtDatabase {
 
   static final NaysCbtDatabase instance = NaysCbtDatabase();
   static const databaseName = 'nays_cbt_offline.db';
-  static const schemaVersion = 9;
+  static const schemaVersion = 11;
 
   DatabaseFactory? _factory;
   String? _databasePath;
@@ -50,6 +50,51 @@ class NaysCbtDatabase {
         onUpgrade: _upgradeSchema,
       ),
     );
+  }
+
+  Future<List<Map<String, Object?>>> getReminderList() async {
+    final db = await database;
+    final rows = await db.query(
+      'reminders',
+      orderBy: 'time_text ASC, created_at DESC',
+    );
+    return rows;
+  }
+
+  Future<Map<String, Object?>?> getReminder(String reminderId) async {
+    final db = await database;
+    final rows = await db.query(
+      'reminders',
+      where: 'id = ?',
+      whereArgs: [reminderId],
+      limit: 1,
+    );
+    if (rows.isEmpty) return null;
+    return rows.first;
+  }
+
+  Future<void> upsertReminder(Map<String, Object?> reminder) async {
+    final db = await database;
+    await db.insert(
+      'reminders',
+      reminder,
+      conflictAlgorithm: ConflictAlgorithm.replace,
+    );
+  }
+
+  Future<void> updateReminderEnabled(String reminderId, bool enabled) async {
+    final db = await database;
+    await db.update(
+      'reminders',
+      {'enabled': enabled ? 1 : 0, 'updated_at': DateTime.now().toUtc().toIso8601String()},
+      where: 'id = ?',
+      whereArgs: [reminderId],
+    );
+  }
+
+  Future<void> clearReminderAlarm(String reminderId) async {
+    final db = await database;
+    await db.delete('reminders', where: 'id = ?', whereArgs: [reminderId]);
   }
 
   Future<void> updateExamProgress({
@@ -188,8 +233,27 @@ class NaysCbtDatabase {
       "WHERE sync_status = 'failed' AND next_attempt_at IS NULL",
     );
     await db.execute(
+      '''
+      CREATE TABLE IF NOT EXISTS reminders (
+        id TEXT PRIMARY KEY NOT NULL,
+        title TEXT NOT NULL,
+        time_text TEXT NOT NULL,
+        repeat_type TEXT NOT NULL DEFAULT 'once',
+        ringtone TEXT NOT NULL DEFAULT 'default',
+        enabled INTEGER NOT NULL DEFAULT 1 CHECK (enabled IN (0, 1)),
+        next_occurrence TEXT,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      )
+      ''',
+    );
+    await db.execute(
       'CREATE INDEX IF NOT EXISTS sync_queue_due '
       'ON sync_queue(user_id, sync_status, next_attempt_at)',
+    );
+    await db.execute(
+      "UPDATE reminders SET ringtone = 'default' "
+      "WHERE ringtone IN ('default_alarm', 'defualt', '')",
     );
   }
 
@@ -1378,6 +1442,19 @@ class NaysCbtDatabase {
         total_questions INTEGER NOT NULL,
         checksum TEXT NOT NULL,
         status TEXT NOT NULL CHECK (status IN ('ready', 'importing'))
+      )
+      ''',
+      '''
+      CREATE TABLE IF NOT EXISTS reminders (
+        id TEXT PRIMARY KEY NOT NULL,
+        title TEXT NOT NULL,
+        time_text TEXT NOT NULL,
+        repeat_type TEXT NOT NULL DEFAULT 'once',
+        ringtone TEXT NOT NULL DEFAULT 'default',
+        enabled INTEGER NOT NULL DEFAULT 1 CHECK (enabled IN (0, 1)),
+        next_occurrence TEXT,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
       )
       ''',
       '''

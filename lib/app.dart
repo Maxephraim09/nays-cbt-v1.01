@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'app_state.dart';
 import 'auth_router.dart';
 import 'auth_service.dart';
+import 'screens/alarm_screen.dart';
 import 'screens/cbt_screens.dart';
 import 'services/firestore_service.dart';
 import 'theme/app_theme.dart';
@@ -32,6 +33,7 @@ class _NaysAppState extends State<NaysApp> {
         darkTheme: AppTheme.dark,
         themeMode: _controller.themeMode,
         home: AuthRouter(controller: _controller, authService: _authService),
+        onGenerateRoute: _generateAlarmRoute,
       ),
     ),
   );
@@ -52,6 +54,18 @@ class FirebaseStartupFailureApp extends StatelessWidget {
     home: PracticeSubjectsScreen(
       service: FirestoreCbtService(localUserId: 'local-device'),
     ),
+    onGenerateRoute: _generateAlarmRoute,
+  );
+}
+
+Route<dynamic>? _generateAlarmRoute(RouteSettings settings) {
+  if (settings.name == null) return null;
+  final uri = Uri.tryParse(settings.name!);
+  if (uri == null || uri.path != '/alarm') return null;
+  final reminderId = uri.queryParameters['reminder_id'];
+  return MaterialPageRoute(
+    settings: settings,
+    builder: (_) => AlarmScreen(reminderId: reminderId),
   );
 }
 

@@ -16,6 +16,7 @@ import 'package:nays_mobile/screens/auth_screens.dart';
 import 'package:nays_mobile/screens/home_dashboard.dart';
 import 'package:nays_mobile/screens/info_screens.dart';
 import 'package:nays_mobile/screens/main_shell.dart';
+import 'package:nays_mobile/screens/reminders_screen.dart';
 import 'package:nays_mobile/screens/terms_of_service_screen.dart';
 import 'package:nays_mobile/services/firestore_models.dart';
 import 'package:nays_mobile/services/firestore_service.dart';
@@ -501,12 +502,12 @@ void main() {
     await tester.tap(find.text('Support'));
     expect(openedPage, isA<SupportScreen>());
     await tester.scrollUntilVisible(
-      find.text('About NAYS'),
+      find.text('Reminders'),
       240,
       scrollable: find.byType(Scrollable).first,
     );
-    await tester.tap(find.text('About NAYS'));
-    expect(openedPage, isA<AboutScreen>());
+    await tester.tap(find.text('Reminders'));
+    expect(openedPage, isA<RemindersScreen>());
   });
 
   testWidgets('Profile tab uses the supplied default avatar asset', (
@@ -524,6 +525,36 @@ void main() {
       (avatar.backgroundImage! as AssetImage).assetName,
       'assets/images/avarta.png',
     );
+  });
+
+  testWidgets('home support contact chips use readable light-mode colors', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.light,
+        home: Scaffold(
+          body: HomeDashboardTab(
+            controller: DemoAppController(),
+            onTab: (_) {},
+            onOpen: (_) {},
+          ),
+        ),
+      ),
+    );
+    await tester.scrollUntilVisible(
+      find.text('Need Help?'),
+      240,
+      scrollable: find.byType(Scrollable).first,
+    );
+
+    final chips = tester.widgetList<ActionChip>(find.byType(ActionChip));
+    expect(chips, hasLength(2));
+    for (final chip in chips) {
+      expect(chip.backgroundColor, Colors.white);
+      expect((chip.label as Text).style?.color, AppTheme.forest);
+      expect((chip.avatar as Icon).color, AppTheme.forest);
+    }
   });
 
   testWidgets('JAMB timer, answers, and avatar stay readable in both themes', (

@@ -241,6 +241,12 @@ flutter test\
 flutter build windows --release\
 \`\`\`\
 \
+
+flutter clean
+flutter pub get
+flutter build apk --release
+
+
 Expected output directory:\
 \
 \`C:\Users\MGTechs\GITHUB\NAYS_2.0.1\nays_mobile\build\windows\x64\runner\Release\\\`\
